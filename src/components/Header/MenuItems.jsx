@@ -1,24 +1,33 @@
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
+import Language from './Language';
+
 
 const links = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' }
+    { href: '/what-we-offer', label: 'whatWeOffer' },
+    { href: '/about', label: 'about' },
+    { href: '/partners', label: 'partners' },
+    { href: '/news-and-events', label: 'news' },
+    { href: '/contact', label: 'contact' }
 ];
 
+
 export default function MenuItems() {
+    const { t } = useTranslation('header');
     return (
-        <div>
+        <ul className='flex'>
             {
                 links.map((link, index) => (
                     <Link
                         key={index}
                         href={link.href}
-                        className=" text-[#414052] hover:text-[#AC6DDE] transition-colors"
+                        className=" text-white hover:text-themeGreen transition-colors mx-[10px]"
                     >
-                        {link.label}
+                        {t(link.label)}
                     </Link>
                 ))
             }
-        </div>
+            <Language />
+        </ul>
     )
 }
