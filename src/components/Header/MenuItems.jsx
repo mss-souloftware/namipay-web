@@ -18,13 +18,15 @@ export default function MenuItems() {
         <ul className='flex'>
             {
                 links.map((link, index) => (
-                    <Link
-                        key={index}
-                        href={link.href}
-                        className=" text-white hover:text-themeGreen transition-colors mx-[10px]"
-                    >
-                        {t(link.label)}
-                    </Link>
+                    <li>
+                        <Link
+                            key={index}
+                            href={link.href}
+                            className=" text-white hover:text-themeGreen transition-colors mx-[10px]"
+                        >
+                            {t(link.label)}
+                        </Link>
+                    </li>
                 ))
             }
             <Language />

@@ -34,7 +34,7 @@ export default function Language() {
                         href={{ pathname, query }}
                         locale={locale}
                         onClick={() => changeLocale(locale)}
-                        className="bg-[#414052] hover:bg-[#414052]/80 active:bg-[#414052] px-4 py-2 rounded-xl uppercase text-sm transition-colors"
+                        className="bg-transparent hover:bg-[#414052]/80 active:bg-[#414052] px-4 py-2 rounded-xl uppercase text-sm transition-colors border-themeGreen border"
                     >
                         {convertLocaleText(locale)}
                     </Link>
