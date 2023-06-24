@@ -1,7 +1,7 @@
 import Container from './Container/Container';
 import Footer from './Footer/Footer';
 import Navbar from './Header/Navbar';
-import HeroBg from './Home/HeroBg';
+import HeroBg from './HeroBg';
 
 
 export default function Layout({ children }) {
