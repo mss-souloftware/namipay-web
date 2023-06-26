@@ -32,7 +32,7 @@ export default function Hero() {
                 y: 0,
                 duration: 3,
                 ease: "power1.inOut",
-            },
+            }, 'a'
         ).to(
             peraRevealElement,
             {
@@ -40,7 +40,7 @@ export default function Hero() {
                 opacity: 1,
                 duration: 3,
                 ease: "power1.inOut",
-            },
+            },'a'
         );
 
     }, []);

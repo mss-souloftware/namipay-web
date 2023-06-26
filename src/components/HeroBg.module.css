@@ -1,6 +1,5 @@
 .dotsRotate {
-    animation: rotate 2s linear infinite;
-    display: none;
+    animation: rotate 5s linear infinite
 }
 
 @keyframes rotate {
