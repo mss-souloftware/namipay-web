@@ -1,4 +1,16 @@
 .heroAnimeStart h1,
 .heroAnimeStart h2 {
-    font-size: 96px;
+    font-size: 140px;
+    line-height: 160px;
+}
+
+.headingsWraper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.heroAnimeStart .mainTitleGradient {
+    opacity: 0.5;
+    color: #fff;
 }
