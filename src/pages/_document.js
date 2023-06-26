@@ -1,4 +1,4 @@
-// import { useRouter } from 'next/router';
+import SmoothScroll from '@/components/SmoothScroll';
 import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
@@ -7,10 +7,11 @@ export default function Document() {
   const { locales, locale: activeLocale } = router;
   */
   return (
-    <Html lang="" className="bg-[#17171F] font-lato tracking-wide text-white">
+    <Html lang="" className="bg-white font-lato tracking-wide text-white">
       <Head />
       <body >
         <Main />
+        <SmoothScroll />
         <NextScript />
       </body>
     </Html>

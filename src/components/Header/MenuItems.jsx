@@ -18,7 +18,7 @@ export default function MenuItems() {
         <ul className='flex'>
             {
                 links.map((link, index) => (
-                    <li>
+                    <li key={index}>
                         <Link
                             key={index}
                             href={link.href}

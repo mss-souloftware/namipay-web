@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { gsap, CustomEase } from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -19,7 +19,7 @@ export default function Hero() {
                 trigger: mainElement,
                 start: "75% 80%",
                 end: "70% 80%",
-                markers: true,
+              //  markers: true,
                 scrub: 3,
                 pin: true,
             },

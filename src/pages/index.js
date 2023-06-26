@@ -6,7 +6,13 @@ export default function Home() {
   const { t } = useTranslation('common');
 
   return (
-    <Hero></Hero>
+    <>
+
+      <Hero></Hero>
+      <Hero></Hero>
+      <Hero></Hero>
+
+    </>
   );
 }
 
