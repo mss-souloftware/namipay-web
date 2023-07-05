@@ -67,4 +67,9 @@ html[lang="en"] {
     background: #22DB54;
 }
 
+.mainGradienText{
+    background: -webkit-linear-gradient(180deg,#22DB54,#310D7D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* Buttons */

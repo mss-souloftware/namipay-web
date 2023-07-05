@@ -1,13 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
+import styles from './OurServices.module.css'
 
 export default function ServicesCards(props) {
     return (
-        <div className="card-col">
-            <div className="imageBox">
-                <Image src={props.imgUrl} layout='fill' objectFit='cover' />
+        <div className={styles.cardCol}>
+            <div className={styles.imageBox}>
+                <Image className={styles.cardImg} src={props.imgUrl} fill={true} />
             </div>
-            <div className="cardTxt">
+            <div className={styles.cardTxt}>
                 <h3>{props.title}</h3>
                 <p>
                     {props.pera}

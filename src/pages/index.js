@@ -1,5 +1,6 @@
 import Hero from '@/components/Home/Hero';
 import OurServices from '@/components/Home/OurServices/OurServices';
+import OurSolutions from '@/components/Home/OurSolutions/OurSolutions';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <OurServices />
+      <OurSolutions />
     </>
   );
 }

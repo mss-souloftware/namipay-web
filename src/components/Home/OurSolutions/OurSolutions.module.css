@@ -1,0 +1,51 @@
+#ourSolutions {
+    height: 100vh;
+    padding: 80px 0;
+}
+
+#ourSolutions h2 {
+    font-size: 40px;
+}
+
+.solutionPanel {
+    padding: 100px 0;
+    border-radius: 40px;
+    height: 100vh;
+}
+
+.solutionPanel>div {
+    height: 100%;
+}
+
+.solutionPanel>div:first-child {
+    width: 40%;
+}
+
+.solutionPanel img {
+    width: auto !important;
+    height: auto !important;
+    position: inherit !important;
+    object-fit: contain;
+}
+
+.solutionData {
+    width: 60%;
+}
+
+/* .solutionData>div {
+    height: auto;
+    width: 100%;
+    display: inline;
+} */
+
+.solutionData h3 {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.solutionData p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 500px;
+}

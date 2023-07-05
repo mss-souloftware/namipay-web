@@ -1,5 +1,6 @@
 import React from 'react'
 import ServicesCards from './ServicesCards'
+import styles from './OurServices.module.css'
 
 export default function OurServices() {
     const serviceCardsData = [
@@ -11,19 +12,19 @@ export default function OurServices() {
       {
         title: 'Your partners for growth',
         pera: 'Nami is your growth partner We provide the latest payment solutions and end-to-end high-quality service to enable our partners, including banks, financial institutions, and retailers to increase their market penetration.',
-        imgUrl: '/images/components/services-card/service1.jpg'
+        imgUrl: '/images/components/services-card/service2.jpg'
       },
       {
         title: 'Manage all your transactions with tailored solutions',
         pera: 'Nami’s one-stop-shop With our customized solutions you can access and manage all your financial transactions easily, quickly, and securely.',
-        imgUrl: '/images/components/services-card/service1.jpg'
+        imgUrl: '/images/components/services-card/service3.jpg'
       },
     ];
   
     return (
-      <section id="ourServices">
+      <section id={styles.ourServices}>
         <h2>Our Services</h2>
-        <div className="flex align-center justify-between relative">
+        <div className={`flex align-center justify-between relative ${styles.ourServicesPanel}`}>
           {serviceCardsData.map((cardData, index) => (
             <ServicesCards
               key={index}
