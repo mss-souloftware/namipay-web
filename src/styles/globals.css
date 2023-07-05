@@ -66,10 +66,18 @@ html[lang="en"] {
     height: 100%;
     background: #22DB54;
 }
+/* Buttons */
 
 .mainGradienText{
     background: -webkit-linear-gradient(180deg,#22DB54,#310D7D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-/* Buttons */
+
+footer{
+    background-color: #fff;
+    background-image: url('../../public/images/components/footerGradient.png');
+    background-size: cover;
+    background-position: bottom right;
+    border-radius: 40px 40px 0 0;
+}
