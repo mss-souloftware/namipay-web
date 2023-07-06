@@ -3,6 +3,8 @@
 }
 #ourServices h2 {
     font-size: 40px;
+    opacity: 0;
+    margin-bottom: -30px;
 }
 
 .cardCol {
