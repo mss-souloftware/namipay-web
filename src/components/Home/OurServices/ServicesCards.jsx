@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./OurServices.module.css";
 
 export default function ServicesCards(props) {
+
   const cardRef = useRef(null);
 
   useEffect(() => {
@@ -12,24 +13,14 @@ export default function ServicesCards(props) {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: cardElement,
-        start: "top 80%",
-        end: "bottom 80%",
-
-      },
+    gsap.to(cardElement, {
+      opacity: 1,
+      ease: "power1.inOut",
     });
-
-    tl.fromTo(
-      cardElement,
-      { opacity: 0 },
-      { opacity: 1, duration: 1, ease: "power2.inOut" }
-    );
   }, []);
 
   return (
-    <div ref={cardRef} className={`${styles.cardCol} opacity-50`}>
+    <div ref={props.forwardedRef || cardRef} className={`${styles.cardCol} ${props.className}`}>
       <div className={styles.imageBox}>
         <Image className={styles.cardImg} src={props.imgUrl} fill={true} />
       </div>
