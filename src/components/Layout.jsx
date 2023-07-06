@@ -31,10 +31,10 @@ export default function Layout({ children }) {
     <>
       <main className={codec.className
       }>
-        <PageRevealAnimation />
+        {!hideFooterAndHero && <PageRevealAnimation />}
         <Navbar />
-        <HeroBg />
-        <Container>{children}</Container>
+        {!hideFooterAndHero && <HeroBg />}
+        {children}
         {!hideFooterAndHero && <Footer />}
       </main>
     </>

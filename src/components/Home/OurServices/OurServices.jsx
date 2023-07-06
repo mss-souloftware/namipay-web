@@ -38,7 +38,7 @@ export default function OurServices() {
         invalidateOnRefresh: true,
         anticipatePin: 1,
         // snap: 1,
-        markers: true,
+        // markers: true,
       },
     });
 
