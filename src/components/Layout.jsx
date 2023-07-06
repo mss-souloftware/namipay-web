@@ -5,6 +5,8 @@ import HeroBg from './HeroBg';
 import localFont from '@next/font/local'
 import PageRevealAnimation from './PageReveal';
 
+import { useRouter } from 'next/router';
+
 // Font files can be colocated inside of `pages`
 const codec = localFont({
   src: [
@@ -23,6 +25,8 @@ const codec = localFont({
 
 
 export default function Layout({ children }) {
+  const router = useRouter();
+  const hideFooterAndHero = router.pathname === '/about';
   return (
     <>
       <main className={codec.className
@@ -31,7 +35,7 @@ export default function Layout({ children }) {
         <Navbar />
         <HeroBg />
         <Container>{children}</Container>
-        <Footer />
+        {!hideFooterAndHero && <Footer />}
       </main>
     </>
   );
