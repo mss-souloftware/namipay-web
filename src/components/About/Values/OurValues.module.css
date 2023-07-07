@@ -25,3 +25,9 @@
 .boxInner img {
     margin: 0 auto;
 }
+
+@media(max-width:1024px){
+    #ourValues{
+        margin: 50px 0;
+    }    
+}
