@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import styles from './Leadreship.module.css'
+import CricleButton from '@/components/Global/CricleButton'
 
 export default function LeaderCard(props) {
     return (
@@ -17,6 +18,9 @@ export default function LeaderCard(props) {
                 <h3>Osman Oueida</h3>
                 <span>Chairman</span>
                 <p>Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
+                <div className="text-center flex justify-center py-3 lg:hidden">
+                    <CricleButton linkRef="#" text="Learn More" />
+                </div>
             </div>
         </div>
     )

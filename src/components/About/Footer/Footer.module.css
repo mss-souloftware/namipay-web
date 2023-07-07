@@ -70,7 +70,7 @@
 
 @media(max-width:768px) {
     #abtFooter {
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
     }
 
     .footerPanel h2 {

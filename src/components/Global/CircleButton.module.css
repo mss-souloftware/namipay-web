@@ -37,4 +37,5 @@
 
 .circleButtonWhite:hover span {
     margin-left: 20px;
+    color:#fff !important;
 }
