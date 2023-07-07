@@ -1,0 +1,57 @@
+#abtFooter {
+    background-color: #310D7D;
+}
+
+.footerPanel {
+    padding: 80px 0 30px;
+}
+
+.footerPanel * {
+    color: #fff;
+}
+
+.footerPanel h2 {
+    font-size: 36px;
+    line-height: 40px;
+    max-width: 400px;
+}
+
+
+.footerPanel p {
+    margin-bottom: 30px;
+}
+
+.footerPanel>div:first-child {
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.footerPanel>div:last-child {
+    width: 60%;
+    padding: 50px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.subsscribe {
+    margin-top: 0px;
+}
+
+.subsscribe h4 {
+    font-size: 24px;
+}
+
+.copyRight {
+    font-size: 14px;
+    margin-bottom: 0 !important;
+}
+
+.socialList{
+    margin-top: 80px;
+}
+.socialList img {
+    filter: invert(1);
+}

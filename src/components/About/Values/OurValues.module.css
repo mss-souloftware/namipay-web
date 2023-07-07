@@ -1,7 +1,27 @@
-.subTitles{
-
+#ourValues{
+    margin: 100px 0;
 }
-.box h3{
-    font-size: 120px;
-    color:red;
+
+.subTitles {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.boxInner {
+    background: #E9FBEE;
+    padding: 50px 30px;
+    width: calc(100% - 10px);
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.boxInner h3 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.boxInner img {
+    margin: 0 auto;
 }

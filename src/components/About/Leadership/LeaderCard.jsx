@@ -7,10 +7,10 @@ import styles from './Leadreship.module.css'
 export default function LeaderCard(props) {
     return (
         <div className={styles.leaderCard}>
-            <div className="profileImage">
+            <div className={styles.profileImage}>
                 <Image className={styles.profile} src='/images/components/about/leader-profile.png' fill={true} />
                 <Link className={styles.arrow} href='#'>
-                    <Image src='/images/components/about/arrows-white.svg' width={25} height={25} />
+                    <Image src='/images/components/about/arrows-white.svg' width={50} height={50} />
                 </Link>
             </div>
             <div className="contentData">

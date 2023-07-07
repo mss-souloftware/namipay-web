@@ -10,7 +10,8 @@ export default function Leadreship() {
             <Container>
                 <h2 className={`${styles.subTitles} text-themeBlue text-center`}>Leadership</h2>
 
-                <div className={styles.leadCardPanel}>
+                <div className={` ${styles.leadCardPanel} flex align-center text-center justify-between`}>
+                    <LeaderCard />
                     <LeaderCard />
                 </div>
             </Container>

@@ -1,4 +1,5 @@
 import AboutHero from "@/components/About/AboutHero";
+import AboutFooter from "@/components/About/Footer/AboutFooter";
 import Leadreship from "@/components/About/Leadership/Leadreship";
 import MissionVission from "@/components/About/MissionVission/MissionVission";
 import OurValues from "@/components/About/Values/OurValues";
@@ -14,6 +15,7 @@ export default function About() {
       <Leadreship />
       <MissionVission />
       <OurValues />
+      <AboutFooter />
     </>
   );
 }

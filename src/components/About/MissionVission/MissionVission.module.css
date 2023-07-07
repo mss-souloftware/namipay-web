@@ -33,3 +33,84 @@
     font-size: 24px;
     font-weight: 600;
 }
+
+@media(max-width:1200px) {
+    #missionVission {
+        padding: 100px 50px 0;
+    }
+
+    .boxBg {
+        padding: 30px 40px;
+    }
+}
+
+
+@media(max-width:1024px) {
+    #missionVission {
+        padding: 50px 0;
+    }
+
+    .boxBg {
+        padding: 20px 30px;
+    }
+
+    .boxBg h3 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:768px) {
+    .boxBg {
+        padding: 0;
+    }
+
+    .mvCard span{
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .mobileBg {
+        padding: 30px 20px;
+        border-radius: 40px;
+    }
+
+    .boxBg h3 {
+        font-size: 18px;
+        margin: 0px !important;
+        display: block;
+        font-weight: 700;
+    }
+
+    .mobileBg p{
+        font-size: 14px;
+    }
+
+    .mvPanel {
+        flex-flow: column;
+    }
+
+    .mvPanel>div {
+        margin-top: 30px;
+    }
+
+    .mvPanel>div:first-child .boxBg,
+    .mvPanel>div:last-child .boxBg {
+        background: transparent;
+        backdrop-filter: none;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .mvPanel>div:first-child .mobileBg {
+        background: #EBE7F2;
+    }
+
+    .mvPanel>div:last-child .mobileBg {
+        background: #E9FCEE;
+    }
+
+    .mvPanel>div {
+        width: 100%;
+        max-width: 100%;
+    }
+}

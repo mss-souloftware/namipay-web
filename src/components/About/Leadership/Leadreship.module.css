@@ -1,10 +1,68 @@
-#leadship{
+#leadship {
     margin-top: 150px;
 }
 
-.leadCardPanel{
+.subTitles {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.leadCardPanel {
     background: url('../../../../public/images/banners/home-hero-bg.jpg') no-repeat center;
     background-size: cover;
     padding: 30px 80px;
     border-radius: 40px;
+    margin-top: 80px;
+}
+
+.leaderCard {
+    width: calc(50% - 80px);
+}
+
+.leaderCard .profile {
+    width: 100% !important;
+    height: auto !important;
+    position: inherit !important;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: -100px;
+}
+
+.profileImage {
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(10px);
+    height: auto;
+    padding: 20px 30px 0;
+    position: relative;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+}
+
+.leaderCard h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 30px 0 0;
+}
+
+.leaderCard span{
+    color: #fff;
+    mix-blend-mode: overlay;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.leaderCard p{
+    margin: 20px 0;
+}
+
+@media(max-width:1024px){
+    #leadship {
+        margin-top: 50px;
+    }
+    
 }

@@ -4,13 +4,14 @@ import styles from "./OurValues.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Container from "@/components/Container/Container";
+import Image from "next/image";
 
 export default function OurValues() {
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 5,
     slidesToScroll: 1,
   };
   return (
@@ -20,23 +21,35 @@ export default function OurValues() {
           Our Values
         </h2>
         <Slider {...settings}>
-          <div className={styles.box}>
-            <h3>1</h3>
+          <div className={styles.slideItembox}>
+            <div className={styles.boxInner}>
+              <Image src='/images/components/about/icons/innovation.svg' objectFit="contain" width={125} height={112} />
+              <h3 className="text-themeBlue">Innovation</h3>
+            </div>
           </div>
-          <div className={styles.box}>
-            <h3>2</h3>
+          <div className={styles.slideItembox}>
+            <div className={styles.boxInner}>
+              <Image src='/images/components/about/icons/growth.svg' objectFit="contain" width={125} height={112} />
+              <h3 className="text-themeBlue">Growth</h3>
+            </div>
           </div>
-          <div className={styles.box}>
-            <h3>3</h3>
+          <div className={styles.slideItembox}>
+            <div className={styles.boxInner}>
+              <Image src='/images/components/about/icons/sustainability.svg' objectFit="contain" width={125} height={112} />
+              <h3 className="text-themeBlue">Sustainability</h3>
+            </div>
           </div>
-          <div className={styles.box}>
-            <h3>4</h3>
+          <div className={styles.slideItembox}>
+            <div className={styles.boxInner}>
+              <Image src='/images/components/about/icons/commitment.svg' objectFit="contain" width={125} height={112} />
+              <h3 className="text-themeBlue">Commitment</h3>
+            </div>
           </div>
-          <div className={styles.box}>
-            <h3>5</h3>
-          </div>
-          <div className={styles.box}>
-            <h3>6</h3>
+          <div className={styles.slideItembox}>
+            <div className={styles.boxInner}>
+              <Image src='/images/components/about/icons/methodology.svg' objectFit="contain" width={125} height={112} />
+              <h3 className="text-themeBlue">Methodology</h3>
+            </div>
           </div>
         </Slider>
       </Container>
