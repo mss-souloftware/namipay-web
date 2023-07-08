@@ -25,7 +25,7 @@ export default function Hero() {
         start: "95% 80%",
         end: "90% 80%",
         scrub: 3,
-        markers: true,
+        // markers: true,
       },
     });
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './OurPartners.module.css'
 import PartnerCard from './PartnerCard';
+import Container from '@/components/Container/Container';
 
 export default function OurPartners() {
     const allPartners = [
@@ -24,23 +25,25 @@ export default function OurPartners() {
 
     return (
         <section id={styles.ourPartners}>
-            <h2> What we guarantee our partners</h2>
-            <div className={`flex align-center justify-between relative`}>
-                {allPartners.map((partnerData, index) => (
-                    <PartnerCard
-                        key={index}
-                        number={index}
-                        title={partnerData.title}
-                        desc={partnerData.desc}
-                    />
-                ))}
-            </div>
-            <div className={`flex align-center justify-between relative`}>
-                <div className="bottomText">
-                    <p>We combine our technical know-how with an innovative mindset to provide our
-                        partners with comprehensive services and the latest financial technology solutions.</p>
+            <Container>
+                <h2> What we guarantee our partners</h2>
+                <div className={`flex align-center justify-between relative`}>
+                    {allPartners.map((partnerData, index) => (
+                        <PartnerCard
+                            key={index}
+                            number={index}
+                            title={partnerData.title}
+                            desc={partnerData.desc}
+                        />
+                    ))}
                 </div>
-            </div>
+                <div className={`flex align-center justify-between relative`}>
+                    <div className="bottomText">
+                        <p>We combine our technical know-how with an innovative mindset to provide our
+                            partners with comprehensive services and the latest financial technology solutions.</p>
+                    </div>
+                </div>
+            </Container>
         </section>
     )
 }
