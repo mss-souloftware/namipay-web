@@ -1,6 +1,7 @@
-#ourServices{
+#ourServices {
     height: 100vh;
 }
+
 #ourServices h2 {
     font-size: 40px;
     opacity: 0;
@@ -10,7 +11,13 @@
 .cardCol {
     width: calc(33.33% - 20px);
     height: 100%;
+    opacity: 0;
 }
+
+.cardActive{
+    opacity: 1;
+}
+
 
 .imageBox {
     display: block;
@@ -27,6 +34,6 @@
     border-radius: 40px;
 }
 
-.cardTxt{
+.cardTxt {
     height: auto;
 }
