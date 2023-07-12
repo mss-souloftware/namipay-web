@@ -26,16 +26,16 @@ const codec = localFont({
 
 export default function Layout({ children }) {
   const router = useRouter();
-  const hideFooterAndHero = router.pathname === '/about';
+  const hideFooterAndHero = router.pathname === '/';
   return (
     <>
       <main className={codec.className
       }>
-        {!hideFooterAndHero && <PageRevealAnimation />}
+        {hideFooterAndHero && <PageRevealAnimation />}
         <Navbar />
-        {!hideFooterAndHero && <HeroBg />}
+        {hideFooterAndHero && <HeroBg />}
         {children}
-        {!hideFooterAndHero && <Footer />}
+        {hideFooterAndHero && <Footer />}
       </main>
     </>
   );
