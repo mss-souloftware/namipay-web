@@ -1,4 +1,6 @@
+import PartnersForm from '@/components/Partners/PartnersForm/PartnersForm';
 import PartnersHero from '@/components/Partners/PartnersHero';
+import PartnerLogo from '@/components/Partners/PartnersLogo/PartnerLogo';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -8,6 +10,8 @@ export default function Partners() {
   return (
     <>
       <PartnersHero />
+      <PartnerLogo />
+      <PartnersForm />
     </>
   );
 }

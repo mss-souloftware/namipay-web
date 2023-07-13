@@ -1,0 +1,26 @@
+.partnersLogoBg {
+    background: #EAE7F2;
+    border-radius: 40px;
+    padding: 20px 0;
+    margin: 30px auto;
+}
+
+.logoPanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+}
+
+.logoPanelInner {
+    width: calc(20% - 20px);
+    text-align: center;
+}
+
+.logoPanelInner img {
+    width: 100% !important;
+    height: auto !important;
+    position: inherit !important;
+    margin: auto;
+}
