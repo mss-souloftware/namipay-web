@@ -1,7 +1,10 @@
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Language from './Language';
 import Image from 'next/image';
+
+import styles from './Header.module.css';
 
 
 const links = [
@@ -15,6 +18,12 @@ const links = [
 
 export default function MenuItems() {
     const { t } = useTranslation('header');
+
+    const router = useRouter();
+    const currentRoute = router.pathname;
+    const isBlueText = currentRoute === '/partners'; 
+    const textClassName = isBlueText ? styles.blueNavItem : '';
+
     return (
         <>
             <ul className='flex desktopMenu'>
@@ -24,7 +33,7 @@ export default function MenuItems() {
                             <Link
                                 key={index}
                                 href={link.href}
-                                className=" text-white hover:text-themeGreen transition-colors mx-[10px]"
+                                className={`${textClassName} text-white hover:text-themeGreen transition-colors mx-[10px]`}
                             >
                                 {t(link.label)}
                             </Link>

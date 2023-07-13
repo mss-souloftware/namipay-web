@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import styles from './Header.module.css'
+
 export default function Language() {
     const router = useRouter();
     const { locales, locale: activeLocale } = router;
@@ -20,6 +22,11 @@ export default function Language() {
         document.cookie = `NEXT_LOCALE=${locale}`;
     };
 
+
+    const currentRoute = router.pathname;
+    const isBlueText = currentRoute === '/partners';
+    const textClassName = isBlueText ? styles.blueNavItem : '';
+
     return (
         <div className="languageToggle">
             {/* <span className="bg-[#AC6DDE] px-4 py-2 rounded-xl uppercase text-sm">
@@ -34,8 +41,7 @@ export default function Language() {
                         href={{ pathname, query }}
                         locale={locale}
                         onClick={() => changeLocale(locale)}
-                        className="bg-transparent hover:bg-[#414052]/80 active:bg-[#414052] px-4 py-2 rounded-xl uppercase text-sm transition-colors border-themeGreen border"
-                    >
+                        className={`${textClassName} bg-transparent hover:bg-[#414052]/80 active:bg-[#414052] px-4 py-2 rounded-xl uppercase text-sm transition-colors border-themeGreen border`}>
                         {convertLocaleText(locale)}
                     </Link>
                 );
