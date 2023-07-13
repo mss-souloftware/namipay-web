@@ -1,4 +1,3 @@
-import Container from './Container/Container';
 import Footer from './Footer/Footer';
 import Navbar from './Header/Navbar';
 import HeroBg from './HeroBg';
@@ -26,16 +25,17 @@ const codec = localFont({
 
 export default function Layout({ children }) {
   const router = useRouter();
-  const hideFooterAndHero = router.pathname === '/';
+  const showHeader = router.pathname === '/';
+  const showFooter = router.pathname === '/' || router.pathname === '/partners';
   return (
     <>
       <main className={codec.className
       }>
-        {hideFooterAndHero && <PageRevealAnimation />}
+        {showHeader && <PageRevealAnimation />}
         <Navbar />
-        {hideFooterAndHero && <HeroBg />}
+        {showHeader && <HeroBg />}
         {children}
-        {hideFooterAndHero && <Footer />}
+        {showFooter && <Footer />}
       </main>
     </>
   );

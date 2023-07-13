@@ -1,10 +1,16 @@
+import { useRouter } from 'next/router';
 import Container from '../Container/Container';
 import styles from './Footer.module.css'
 import SocialIcons from './SocialIcons';
 
 export default function Footer() {
+  const route = useRouter();
+  const currentPath = route.pathname;
+  const isPartner = currentPath === '/partners'; 
+    const borderClassName = isPartner ? styles.borderGreen : '';
+  
   return (
-    <footer>
+    <footer className={styles.borderClassName}>
       <Container>
         <div className={`${styles.footerPanel} flex align-center`}>
           <div className="rightData">
@@ -16,7 +22,7 @@ export default function Footer() {
               <p className={`${styles.copyRight} text-themeBlue`}>© 2022 Luna Space Financial Company. All rights reserved.</p>
             </div>
           </div>
-          <div className="leftData">
+          <div className={`leftData ${styles.borderClassName}`}>
             <div className={`${styles.contactPanel} flex justify-between align-center`}>
               <div className="contactInner">
                 <h4>Customer Service</h4>

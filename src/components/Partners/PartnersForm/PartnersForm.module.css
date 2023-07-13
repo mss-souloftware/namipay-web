@@ -1,0 +1,42 @@
+.partnerFormPanel {
+    background: url('../../../../public/images/banners/partner-form-bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 50px 80px;
+    max-width: 70%;
+    margin: 100px auto;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.partnerFormPanel h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.partnerFormPanel p {
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.formInnerPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formInnerPanel .formInner {
+    width: calc(50% - 10px);
+}
+
+.formInnerPanel input,
+.partnerFormPanel textarea {
+    width: 100%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 10px 30px;
+    resize: none;
+}

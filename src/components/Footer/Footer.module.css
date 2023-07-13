@@ -1,3 +1,7 @@
+.borderClassName{
+    border: 1px solid #22DB54;
+}
+
 .footerPanel {
     padding: 50px 0;
 }
