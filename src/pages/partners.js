@@ -1,3 +1,4 @@
+import PartnersHero from '@/components/Partners/PartnersHero';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -6,7 +7,7 @@ export default function Partners() {
 
   return (
     <>
-      
+      <PartnersHero />
     </>
   );
 }

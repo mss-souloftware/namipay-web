@@ -1,0 +1,39 @@
+#partnersHero {
+    margin-top: 150px;
+}
+
+.partnersHeroPanel {
+    padding: 10px;
+    background: url('../../../public/images/banners/home-hero-bg.jpg') no-repeat bottom;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 150px;
+}
+
+.partnersHeroPanel>div:first-child {
+    width: 40%;
+}
+
+.partnersHeroPanel>div:last-child {
+    width: calc(60% - 150px);
+    margin: auto;
+}
+
+.partnersHeroPanelInner img {
+    position: inherit !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 150px;
+}
+
+.partnersHeroPanelInner h1 {
+    font-size: 36px;
+    color: #fff;
+    mix-blend-mode: overlay;
+    font-weight: 800;
+}
+
+.partnersHeroPanelInner p {
+    font-weight: 200;
+}
