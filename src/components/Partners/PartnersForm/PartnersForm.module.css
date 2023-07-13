@@ -40,3 +40,33 @@
     padding: 10px 30px;
     resize: none;
 }
+
+@media(max-width:1024px) {
+    .partnerFormPanel {
+        padding: 30px 50px;
+        max-width: 100%;
+        margin: 50px auto;
+    }
+
+    .partnerFormPanel h2 {
+        max-width: 100%;
+        font-size: 24px;
+    }
+}
+
+@media(max-width:768px) {
+    .partnerFormPanel {
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    .formInnerPanel {
+        flex-flow: column;
+        margin: 0;
+    }
+
+    .formInnerPanel .formInner {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

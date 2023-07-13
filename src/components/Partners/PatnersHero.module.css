@@ -37,3 +37,60 @@
 .partnersHeroPanelInner p {
     font-weight: 200;
 }
+
+@media(max-width:1280px) {
+    .partnersHeroPanel>div:last-child {
+        width: calc(60% - 50px);
+    }
+
+    .partnersHeroPanelInner h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:1024px) {
+    .partnersHeroPanel {
+        padding: 10px;
+        background: url('../../../public/images/banners/home-hero-bg.jpg') no-repeat right;
+        flex-flow: column;
+        margin: 0 auto;
+        border-radius: 40px;
+    }
+
+    .partnersHeroPanel>div:first-child,
+    .partnersHeroPanel>div:last-child {
+        width: 100%;
+    }
+
+    .partnersHeroPanelInner img {
+        border-radius: 40px;
+    }
+
+    .partnersHeroPanelInner {
+        text-align: center;
+    }
+
+    .partnersHeroPanelInner h1 {
+        margin: 30px 0 20px;
+    }
+
+
+}
+
+@media(max-width:600px) {
+    .partnersHeroPanel {
+        max-width: 300px;
+        border-radius: 300px 300px 20px 20px;
+        margin: 0 auto;
+        background-position: 100% 0%;
+    }
+
+    .partnersHeroPanelInner img {
+        width: 300px !important;
+        height: 280px !important;
+        border-radius: 500px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+}

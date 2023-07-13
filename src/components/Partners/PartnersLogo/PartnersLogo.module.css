@@ -11,6 +11,7 @@
     justify-content: space-between;
     max-width: 80%;
     margin: auto;
+    flex-flow: wrap;
 }
 
 .logoPanelInner {
@@ -23,4 +24,19 @@
     height: auto !important;
     position: inherit !important;
     margin: auto;
+}
+
+@media(max-width:768px) {
+    .logoPanel {
+        flex-flow: wrap;
+    }
+
+    .logoPanelInner {
+        width: calc(33.33% - 10px);
+    }
+
+    .logoPanelInner:last-child,
+    .logoPanelInner:nth-child(1) {
+        display: none;
+    }
 }

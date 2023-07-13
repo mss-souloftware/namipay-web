@@ -25,8 +25,7 @@ export default function PartnerLogo() {
                         <div className={styles.logoPanelInner}>
                             <Image src='/images/components/partners/logos/partners-white5.svg' fill={true} />
                         </div>
-                    </div>
-                    <div className={styles.logoPanel}>
+
                         <div className={styles.logoPanelInner}>
                             <Image src='/images/components/partners/logos/partners-white6.svg' fill={true} />
                         </div>
@@ -42,8 +41,7 @@ export default function PartnerLogo() {
                         <div className={styles.logoPanelInner}>
                             <Image src='/images/components/partners/logos/partners-white10.svg' fill={true} />
                         </div>
-                    </div>
-                    <div className={styles.logoPanel}>
+
                         <div className={styles.logoPanelInner}>
                             <Image src='/images/components/partners/logos/partners-white1.svg' fill={true} />
                         </div>
@@ -59,8 +57,8 @@ export default function PartnerLogo() {
                         <div className={styles.logoPanelInner}>
                             <Image src='/images/components/partners/logos/partners-white5.svg' fill={true} />
                         </div>
-                    </div>
-                    <div className={styles.logoPanel}>
+
+
                         <div className={styles.logoPanelInner}>
                             <Image src='/images/components/partners/logos/partners-white6.svg' fill={true} />
                         </div>

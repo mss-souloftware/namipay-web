@@ -15,11 +15,11 @@ export default function Footer() {
         <div className={`${styles.footerPanel} flex align-center`}>
           <div className="rightData">
             <div className="rightDataInner">
-              <h2 className='text-themeBlue'>Let’s start growing your business!</h2>
+              <h2 className='text-themeBlue mb-5 md:mb-0'>Let’s start growing your business!</h2>
             </div>
             <div className="rightDataInner">
-              <SocialIcons />
-              <p className={`${styles.copyRight} text-themeBlue`}>© 2022 Luna Space Financial Company. All rights reserved.</p>
+              <SocialIcons className='hidden md:flex' />
+              <p className={`${styles.copyRight} text-themeBlue hidden md:block`}>© 2022 Luna Space Financial Company. All rights reserved.</p>
             </div>
           </div>
           <div className={`leftData ${styles.borderClassName}`}>
